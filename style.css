@@ -49,7 +49,7 @@
   --color-surface: var(--color-cream-100);
   --color-text: var(--color-slate-900);
   --color-text-secondary: var(--color-slate-500);
-  --color-primary: var(--color-teal-500);
+  --color-primary: rgb(116, 127, 224);
   --color-primary-hover: var(--color-teal-600);
   --color-primary-active: var(--color-teal-700);
   --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
@@ -753,7 +753,7 @@ body {
 }
 
 .container {
-    max-width: var(--container-md);
+    max-width: var(--container-lg);
     margin: 0 auto;
     padding: 0 var(--space-20);
 }
@@ -797,15 +797,22 @@ body {
 
 /* Hero Section */
 .hero {
+    font-family: Camphor, Open Sans, Segoe UI, sans-serif;
     margin: var(--space-32) 0 var(--space-32) 0;
 }
 
 .hero h1 {
-    font-size: var(--font-size-4xl);
+    font-size: 70px;
     font-weight: var(--font-weight-normal);
     color: var(--color-text-secondary);
     margin-bottom: var(--space-20);
     line-height: var(--line-height-tight);
+}
+
+.hero h4{
+  font-size: var(--font-size-3xl);
+  color: rgb(82, 95, 127);
+  margin: 20px 0px 20px 0px;
 }
 
 .hero h1 .name {
@@ -813,32 +820,24 @@ body {
 }
 
 .hero p {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-2xl);
     color: var(--color-text-secondary);
     max-width: 600px;
 }
 
 /* Kali Linux Terminal - Made Bigger */
 .terminal {
-    background: var(--color-pinkish-100);
-    border: var(--space-2) solid var(--color-border);
-    border-radius: var(--radius-lg);
-    padding: var(--space-32);
-    margin: var(--space-32) 0;
-    box-shadow: var(--shadow-lg);
-    min-height: 500px;
-    width: 100%;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+  background: #4c5670;
+  color: #e8e8e8;
+  border-radius: 7px;
+  padding: 30px 20px;
+  margin-bottom: 32px;
 }
 
 .terminal-header {
-    display: flex;
-    align-items: center;
-    /* margin-bottom: var(--space-20);
-    padding-bottom: var(--space-16); */
-    border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
 }
 
 .terminal-buttons {
@@ -864,11 +863,16 @@ body {
 }
 
 .terminal-title {
-    color: var(--color-red-400);
-    font-size: var(--font-size-base);
-    /* margin-left: var(--space-16); */
-    font-weight: var(--font-weight-bold);
-    font-family: var(--font-family-mono);
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  color: #bfcaf8;
+  font-size: 1em;
+  margin-left: 24px;
+  font-weight: bold;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 7px;
 }
 
 .terminal-title::before {
@@ -885,9 +889,18 @@ body {
 }
 
 .code-line {
-    display: block;
-    margin-bottom: var(--space-4);
-    padding: var(--space-2) 0;
+  color: #e2c58b; /* variable key and symbols */
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1.1em;
+  display: block;
+  margin-left: 20px;
+}
+
+.code-value {
+  color: #e8e8e8; /* value text */
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-size: 1.1em;
+  margin-left: 40px;
 }
 
 .code .key { 
