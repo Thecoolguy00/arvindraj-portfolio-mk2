@@ -881,7 +881,7 @@ body {
   animation: caret 1s steps(1) infinite;
   padding: 2px 4px;
   /* Make the cursor visible */
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 /* Kali Linux Terminal - Made Bigger */
@@ -995,7 +995,7 @@ body {
 }
 
 /* blinking cursor in terminal */
-@keyframes caret {
+@keyframes caret-cursor {
 
   0%,
   100% {
@@ -1010,7 +1010,7 @@ body {
 }
 
 .code .code-line .cursor {
-  animation: caret 1s steps(1) infinite;
+  animation: caret-cursor 1s steps(1) infinite;
   background: hsla(0, 0%, 97%, .65);
 }
 
