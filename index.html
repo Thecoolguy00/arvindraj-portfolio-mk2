@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="arvindraj ramesh, portfolio, software developer">
+    <meta name="keywords" content="arvindraj ramesh, portfolio, GenAI engineer">
     <meta name="description" content="Arvindraj Ramesh's Portfolio">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Arvindraj Ramesh</title>
@@ -26,8 +26,13 @@
         <section class="hero">
             <h1 style="color: var(--color-primary);">&gt; <span class="name">Arvindraj_Ramesh<span
                         id="blink">&nbsp;</span></span></h1>
+            <h4>About me:</h4>
             <h4>I'm a <span class="text"> </span></h4>
-            <p>in the bay area who enjoys designing and building beautiful, performant things.</p>
+            <p>GenAI & Security Engineer building production multi-agent systems and autonomous security frameworks
+            using LangGraph, FastAPI, and modern LLM stacks. Expertise at the intersection of agentic AI orchestration
+            and offensive security - applied to agent guardrails, tool isolation, and agentic WAPT. Background spans RAG
+            pipelines, MCP-based tool integration, and web application penetration testing.
+            </p>
         </section>
 
         <!--Terminal -->
@@ -38,11 +43,10 @@
                     <div class="terminal-button yellow"></div>
                     <div class="terminal-button green"></div>
                 </div>
-                <!-- <div class="terminal-title">cat arvindrajramesh.json</div> -->
             </div>
             <div class="code">
-                <span class="code-line">&gt; Arvindraj.location</span>
-                <span class="code-value">"Tambaram, Chennai"</span>
+                <span class="code-line">&gt; Arvindraj.locations</span>
+                <span class="code-value">["Bengaluru", "Chennai", "Mumbai"]</span>
                 <br>
 
                 <span class="code-line">&gt; Arvindraj.contact</span>
@@ -52,20 +56,20 @@
                 <br>
 
                 <span class="code-line">&gt; Arvindraj.resume</span>
-                <span class="code-value">"<a rel="noopener" href="arvindraj_resume.pdf"
+                <span class="code-value">"<a rel="noopener" href="https://drive.google.com/file/d/1z9LZSOwYcEqrrMEEEsNVSyIoqn8JUWUl/view?usp=sharing"
                         target="_blank">arvindraj.pdf</a>"</span>
                 <br>
 
                 <span class="code-line">&gt; Arvindraj.interests</span>
-                <span class="code-value">["Cybersecurity", "AI/ML", "Gaming", "DevOps"]</span>
+                <span class="code-value">["Cybersecurity", "Agentic AI", "AI/ML", "Automation"]</span>
                 <br>
 
                 <span class="code-line">&gt; Arvindraj.education</span>
-                <span class="code-value">"B.E. Computer Science and Engineering - Anna University"</span>
+                <span class="code-value">"B.E. Computer Science and Engineering"</span>
                 <br>
 
                 <span class="code-line">&gt; Arvindraj.languages</span>
-                <span class="code-value">["C", "Python", "Java", "Bash"]</span>
+                <span class="code-value">["C", "Python", "Bash"]</span>
                 <br>
                 <span class="code-line">&gt; <span class="cursor">&nbsp;</span></span>
             </div>
@@ -75,25 +79,90 @@
         <!-- Projects Section -->
         <section class="work-section">
             <div class="section-header">
-                <h2 id="projects" class="section-title">Latest Projects</h2>
+                <h2 id="projects" class="section-title">Projects</h2>
             </div>
 
-            <!-- Project Card 0 -->
             <div class="card">
                 <div class="project-number">
                     <div class="dot"></div>
                     <div class="dot"></div>
                 </div>
                 <h3>
-                    <a href="#" class="project-link">
-                        CyberStrike v2 (Coming Soon - In Development)
+                    <a href="https://github.com/Thecoolguy00/cyberstrike-v2" class="project-link" target="_blank">
+                        CyberStrike v2
                     </a>
                 </h3>
                 <p>
-                    A major upgrade to the CyberStrike framework built around a multi-model autonomous architecture using
-                    LangChain, LangGraph, and a custom Kali MCP server. Designed for scalable autonomous recon, improved
-                    agent coordination, tool-aware decision making, and seamless integration of browser automation,
-                    command execution, and structured multi-step reasoning.
+                    Architected a dual-planner autonomous WAPT framework using LangGraph with a strategic phase manager and
+                    tactical task generator, implementing adaptive plan-execute-replan loops across recon, enumeration, vuln
+                    analysis, exploitation, and reporting phases. Built a persistent LLM-based vulnerability advisor that nudges
+                    the tactical planner toward unchecked high-value attack surface (XSS, SSTI, CORS, Git exposure) every cycle
+                    across all phases, enforcing breadth-first coverage. Engineered a dependency-aware parallel executor using
+                    asyncio.gather with topological task ordering, reducing per-phase cycle count by 3-5x. Built specialised
+                    agents for Nmap, HTTP inspection, directory enumeration, XSS validation, and custom scripting, backed by MCP
+                    execution layers with shell injection prevention, scoped filesystem protections, and async background task
+                    infrastructure. Validated attack techniques and agent behavior against real-world scenarios using TryHackMe
+                    lab environments.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">LangGraph</span>
+                    <span class="tag">MCP</span>
+                    <span class="tag">Nmap</span>
+                    <span class="tag">WAPT</span>
+                    <span class="tag">LLM Agents</span>
+                    <span class="tag">Autonomous Pentesting</span>
+                    <span class="tag">TryHackMe</span>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/Thecoolguy00/cyberstrike-v2" class="btn-code" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="project-number">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <h3>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477079104178098176/" class="project-link" target="_blank">
+                        Aira
+                    </a>
+                </h3>
+                <p>
+                    Personal AI Assistant Framework. Architected a multi-user AI assistant backend supporting streaming text
+                    and real-time voice interaction using FastAPI, LangGraph, and WebSockets. Designed a three-tier persistent
+                    memory system (Profile / Episodic / Semantic) backed by PostgreSQL and ChromaDB with composite retrieval
+                    scoring using semantic similarity, importance weighting, and recency decay. Implemented dual retrieval
+                    runtimes (semantic vector retrieval and lightweight lexical retrieval) switchable at runtime, built scalable
+                    agent orchestration pipelines with contextual memory injection, and containerized backend workloads on ACI
+                    integrating Groq STT, finetuned GPTSoVits TTS, and local embedding runtimes.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">LangGraph</span>
+                    <span class="tag">WebSockets</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">ChromaDB</span>
+                    <span class="tag">Voice AI</span>
+                    <span class="tag">LLM Agents</span>
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7477079104178098176/" class="btn-code" target="_blank">More info</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="project-number">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <h3>
+                    <a href="https://github.com/Thecoolguy00/agent-memory-fabric" class="project-link" target="_blank">
+                        Agent Memory Fabric
+                    </a>
+                </h3>
+                <p>
+A modular persistent memory framework for LLM agents. Provides a four-tier memory architecture backed by PostgreSQL and ChromaDB, exposed as a FastAPI REST service.
                 </p>
                 <div class="project-tags">
                     <span class="tag">LangChain</span>
@@ -104,63 +173,12 @@
                     <span class="tag">Autonomous Pentesting</span>
                     <span class="tag">Multi-Model</span>
                 </div>
-            </div>
-
-            <!-- Project Card 1 -->
-            <div class="card">
-                <div class="project-number">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                <h3><a href="https://github.com/Thecoolguy00/ShortcutGesture" class="project-link" target="_blank">
-                    ShortcutGesture
-                </a></h3>
-                <p>A hand-gesture detection system that converts real-time webcam keypoints into keyboard shortcuts. 
-                Built for productivity and automation, featuring gesture recognition, shortcut mapping, and smooth 
-                real-time interaction.</p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">MediaPipe</span>
-                    <span class="tag">Computer Vision</span>
-                    <span class="tag">Automation</span>
-                </div>
                 <div class="card-footer">
-                    <a href="https://github.com/Thecoolguy00/ShortcutGesture" class="btn-code" target="_blank">View Code</a>
+                    <a href="https://github.com/Thecoolguy00/agent-memory-fabric" class="btn-code" target="_blank">View Code</a>
                 </div>
             </div>
 
-            <!-- Project Card 2 -->
-            <div class="card">
-                <div class="project-number">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                <h3>
-                    <a href="https://github.com/Thecoolguy00/cyberstrike" class="project-link" target="_blank">
-                        CyberStrike
-                    </a>
-                </h3>
-                <p>
-                    An LLM-powered automated web pentesting framework integrating reconnaissance, vulnerability discovery,
-                    and exploitation workflows. Supports Playwright browser automation, Nmap scanning, cURL-based enumeration,
-                    and Kali command execution. Includes a dynamic prompt-injection engine and background execution mode
-                    for handling long-running recon tasks.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">LLM</span>
-                    <span class="tag">Automation</span>
-                    <span class="tag">Playwright</span>
-                    <span class="tag">Nmap</span>
-                    <span class="tag">cURL</span>
-                    <span class="tag">Kali Linux</span>
-                    <span class="tag">Pentesting</span>
-                </div>
-                <div class="card-footer">
-                    <a href="https://github.com/Thecoolguy00/cyberstrike" class="btn-code" target="_blank">View Code</a>
-                </div>
-            </div>
 
-            <!-- Project Card 3 -->
             <div class="card">
                 <div class="project-number">
                     <div class="dot"></div>
@@ -181,6 +199,28 @@
                 </div>
                 <div class="card-footer">
                     <a href="https://github.com/Thecoolguy00/XSS-and-SQL-Injection-demonstrator" class="btn-code" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="project-number">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <h3><a href="https://github.com/Thecoolguy00/ShortcutGesture" class="project-link" target="_blank">
+                    ShortcutGesture
+                </a></h3>
+                <p>A hand-gesture detection system that converts real-time webcam keypoints into keyboard shortcuts. 
+                Built for productivity and automation, featuring gesture recognition, shortcut mapping, and smooth 
+                real-time interaction.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">MediaPipe</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Automation</span>
+                </div>
+                <div class="card-footer">
+                    <a href="https://github.com/Thecoolguy00/ShortcutGesture" class="btn-code" target="_blank">View Code</a>
                 </div>
             </div>
 
