@@ -861,7 +861,7 @@ body {
 .hero p {
   font-size: var(--font-size-2xl);
   color: var(--color-text-secondary);
-  max-width: 600px;
+  max-width: 100%;
 }
 
 /* The blinking cursor beside the name*/

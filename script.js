@@ -1,6 +1,6 @@
 // Initialize Typed.js for the text animation
 var typed = new Typed(".text", {
-    strings: ["Security Engineer", "AI Engineer", "Frontend Developer", "Hardcore Gamer"],
+    strings: ["Security Engineer", "Fullstack GenAI Engineer", "Hardcore Gamer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
