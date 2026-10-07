@@ -42,3 +42,14 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Show more / Show less for activities
+const showMoreBtn = document.getElementById('show-more-btn');
+const moreActivities = document.getElementById('more-activities');
+
+if (showMoreBtn && moreActivities) {
+    showMoreBtn.addEventListener('click', () => {
+        const isHidden = moreActivities.classList.toggle('visible');
+        showMoreBtn.textContent = isHidden ? 'Show less' : 'Show more';
+    });
+}
